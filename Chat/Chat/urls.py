@@ -23,10 +23,11 @@ from Users.views import profile_view,settings_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',home_view,name='home'),
+    path('',include('rt_chat.urls')),
     path('profile/',include('Users.urls')),
     path('accounts/',include('allauth.urls')),
     path('@<username>/',profile_view,name="profile"),
+    
     # path('settings/',settings_view,name='settings'),
 ]
 

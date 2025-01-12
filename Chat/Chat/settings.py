@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'Users',
+    'rt_chat',
 ]
 
 MIDDLEWARE = [
